@@ -1,25 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nha Xe Huy Hoan</title>
-
-  <!-- Swiper CSS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nhà xe Huy Hoàn chuyên xe ghép, xe tiện chuyến, taxi giá rẻ tuyến Hà Nam - Hà Nội - Nội Bài. Gọi ngay: 0911.443.538" />
+  <title>Nhà Xe Huy Hoàn - Xe ghép Hà Nam - Hà Nội - Nội Bài</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17115385989"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17115385989');
+  </script>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      padding-top: 60px;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 18px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
     }
 
     .swiper {
       width: 100%;
-      height: auto;
       max-width: 800px;
-      margin: auto;
-      margin-top: 20px;
+      margin: 20px auto;
     }
 
     .swiper-slide {
@@ -30,138 +62,184 @@
     }
 
     .swiper-slide img {
-      display: block;
       width: 100%;
       height: auto;
       object-fit: cover;
     }
+
     .nut-lien-he {
-  position: fixed;
-  right: 20px;
-  bottom: 100px;
-  z-index: 999;
-}
+      position: fixed;
+      right: 20px;
+      bottom: 100px;
+      z-index: 999;
+    }
 
-.nut-lien-he a {
-  display: block;
-  margin: 10px 0;
-}
+    .nut-lien-he a {
+      display: block;
+      margin: 10px 0;
+    }
 
-.nut-lien-he img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  box-shadow: 0 0 5px #000;
-  transition: transform 0.2s;
-}
+    .nut-lien-he img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      box-shadow: 0 0 5px #000;
+      transition: transform 0.2s;
+    }
 
-.nut-lien-he img:hover {
-  transform: scale(1.1);
-}
-ol.custom-list {
-    list-style-type: none; /* Ẩn số thứ tự mặc định */
-    padding-left: 0; /* Xóa khoảng cách bên trái */
-  }
+    .nut-lien-he img:hover {
+      transform: scale(1.1);
+    }
 
-  ol.custom-list li {
-    position: relative; /* Thiết lập vị trí tương đối cho phần tử li */
-    padding-left: 1.5em; /* Thêm khoảng cách bên trái để chứa dấu chấm */
-  }
+    ol.custom-list {
+      list-style: none;
+      padding-left: 0;
+    }
 
-  ol.custom-list li::before {
-    content: '•'; /* Dấu chấm đen */
-    position: absolute; /* Đặt vị trí tuyệt đối */
-    left: 0; /* Căn trái */
-    top: 0; /* Căn trên */
-    font-size: 1.2em; /* Kích thước dấu chấm */
-    color: black; /* Màu sắc dấu chấm */
-  }
-  p {
-    text-transform: lowercase; /* Chuyển toàn bộ văn bản thành chữ thường */
-    text-indent: 2em; /* Thụt đầu dòng 2 ký tự */
-  }
+    ol.custom-list li {
+      position: relative;
+      padding-left: 1.5em;
+    }
 
-  p::first-letter {
-    text-transform: uppercase; /* Viết hoa chữ cái đầu tiên */
-  }
-    /* Thanh tiện ích */
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #007BFF;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px 20px;
-    color: white;
-  }
+    ol.custom-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 1.2em;
+      color: black;
+    }
 
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    margin-left: 15px;
-    font-size: 18px;
-  }
+    p {
+      text-indent: 2em;
+    }
 
-  .navbar a:hover {
-    text-decoration: underline;
-  }
+    p::first-letter {
+      text-transform: uppercase;
+    }
 
-  .navbar .icon {
-    font-size: 22px;
-    cursor: pointer;
-  }
+    #lienhe {
+      margin-top: 60px;
+      padding: 40px;
+      background-color: #f2f2f2;
+    }
 
-  /* Dành cho toàn trang để tránh bị che bởi thanh nav */
-  body {
-    padding-top: 60px;
-  }
+    .container {
+      padding: 20px;
+      max-width: 960px;
+      margin: auto;
+    }
 
-  /* Phần liên hệ mẫu */
-  #lienhe {
-    margin-top: 500px;
-    padding: 40px;
-    background-color: #f2f2f2;
-  }
+    h1, h2 {
+      text-align: center;
+    }
+
+    img.full-width {
+      width: 100%;
+      height: auto;
+    }
+
+    .center-text {
+      text-align: center;
+      font-weight: bold;
+    }
   </style>
 </head>
+
 <body>
   <div class="navbar">
-  <a href="#" onclick="scrollToTop()">
-    🏠 Trang đầu
-  </a>
-  <a href="#lienhe">Liên hệ</a>
-</div>
-  <center><b>NHÀ XE HUY HOÀN </b>
-     
-    </b>
-    <br/>
-    Chuyên phục vụ xe ghép - xe tiện chuyến - xe taxi giá rẻ <br/> 
-    <b>0911.443.538 - 0942.888.870</b>
- </center>
-
-  <h2 style="text-align: center;">Hãy kết bạn zalo và nhắn tin khi bạn cần</h2>
-
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="sunurbancity.jpg" alt="Ảnh 1"></div>
-      <div class="swiper-slide"><img src="xe1.png" alt="Ảnh 2"></div>
-      <div class="swiper-slide"><img src="xe2.png" alt="Ảnh 3"></div>
-      <div class="swiper-slide"><img src="xe3.png" alt="Ảnh 3"></div>
-      <div class="swiper-slide"><img src="xe4.png" alt="Ảnh 3"></div>
-      <div class="swiper-slide"><img src="xe5.png" alt="Ảnh 3"></div>
-      <div class="swiper-slide"><img src="xe7.png" alt="Ảnh 3"></div>
-      <div class="swiper-slide"><img src="xe8.png" alt="Ảnh 3"></div>
-    </div>
+    <a href="#" onclick="scrollToTop()">🏠 Trang đầu</a>
+    <a href="#lienhe">Liên hệ</a>
   </div>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <div class="container">
+    <h1>NHÀ XE HUY HOÀN</h1>
+    <p class="center-text">Chuyên phục vụ xe ghép - xe tiện chuyến - taxi giá rẻ</p>
+    <p class="center-text"><b>0911.443.538 - 0942.888.870</b></p>
 
-  <!-- Khởi tạo hiệu ứng Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="sunurbancity.jpg" alt="Ảnh 1"></div>
+        <div class="swiper-slide"><img src="xe1.png" alt="Ảnh 2"></div>
+        <div class="swiper-slide"><img src="xe2.png" alt="Ảnh 3"></div>
+        <div class="swiper-slide"><img src="xe3.png" alt="Ảnh 4"></div>
+        <div class="swiper-slide"><img src="xe4.png" alt="Ảnh 5"></div>
+        <div class="swiper-slide"><img src="xe5.png" alt="Ảnh 6"></div>
+        <div class="swiper-slide"><img src="xe7.png" alt="Ảnh 7"></div>
+        <div class="swiper-slide"><img src="xe8.png" alt="Ảnh 8"></div>
+      </div>
+    </div>
+
+    <p>Xe ghép, xe tiện chuyến Hà Nam ↔ Hà Nội ↔ Nội Bài. Nhận bao xe, ghép xe, đón tận nhà – trả tận nơi. Cam kết giá rẻ nhất. Gọi là có xe.</p>
+    <p>Bạn đang có nhu cầu di chuyển về Phủ Lý – Hà Nam mà chưa biết lựa chọn dịch vụ nào? Xe khách thì rẻ nhưng chậm, limousine thì không đón tận nơi, taxi thì đắt. Nhà xe Huy Hoàn ra mắt dịch vụ xe ghép – xe tiện chuyến giá rẻ, tiện lợi, phục vụ mọi khách hàng.</p>
+
+    <img src="xe2.png" alt="Xe Huy Hoàn" class="full-width" />
+    <p class="center-text">Hà Nam <==> Hà Nội <==> Nội Bài</p>
+
+    <ol class="custom-list">
+      <li>1 Ghế Hà Nội - Phủ Lý: 200.000đ</li>
+      <li>2 Ghế Hà Nội - Phủ Lý: 300.000đ</li>
+      <li>1 Ghế Nội Bài - Phủ Lý: 350.000đ</li>
+      <li>Bao xe 4 Chỗ Phủ Lý - Hà Nội: 500.000đ</li>
+      <li>Bao xe 7 Chỗ Phủ Lý - Hà Nội: 650.000đ</li>
+      <li>Bao xe 4 Chỗ Phủ Lý - Nội Bài: 700.000đ</li>
+      <li>Bao xe 7 Chỗ Phủ Lý - Nội Bài: 850.000đ</li>
+    </ol>
+    <i>Bảng giá áp dụng cho Kim Bảng, Duy Tiên. Các khu vực xa hơn có thể phụ thu 50.000đ.</i>
+    <p>Chúng tôi cam kết không thu thêm bất kỳ khoản phí nào khác. Không phí cao tốc, không phí ẩn.</p>
+
+    <img src="guido.png" alt="Gửi đồ" class="full-width" />
+    <h2>Dịch vụ gửi đồ trong ngày</h2>
+    <p>Bạn cần chuyển đồ trong ngày từ Hà Nội về Hà Nam? Hãy nhắn tin cho chúng tôi. Giá chỉ từ 100.000đ – 150.000đ tùy món đồ.</p>
+  
+    <h2>Đặt xe nhanh</h2>
+    <form action="https://formsubmit.co/hoanchau222@gmail.com" method="POST">
+  <input type="hidden" name="_subject" value="Yêu cầu đặt xe mới!">
+  <input type="hidden" name="_captcha" value="false">
+      <label for="name">Họ tên:</label><br>
+      <input type="text" id="name" name="name" required style="width: 100%; padding: 8px;"><br><br>
+
+      <label for="phone">Số điện thoại:</label><br>
+      <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 8px;"><br><br>
+
+      <label for="pickup">Điểm đón:</label><br>
+      <input type="text" id="pickup" name="pickup" required style="width: 100%; padding: 8px;"><br><br>
+
+      <label for="dropoff">Điểm đến:</label><br>
+      <input type="text" id="dropoff" name="dropoff" required style="width: 100%; padding: 8px;"><br><br>
+
+      <label for="date">Ngày đi:</label><br>
+      <input type="date" id="date" name="date" required style="padding: 8px;"><br><br>
+
+      <button type="submit" style="padding: 10px 20px; background-color: #28a745; color: white; border: none; cursor: pointer;">Gửi yêu cầu</button>
+    </form>
+    </div>
+
+    <!-- Nút gọi nhanh -->
+    
+  <div class="nut-lien-he">
+    <a href="tel:0911443538"><img src="call.png" alt="Gọi ngay" /></a>
+    <a href="https://zalo.me/0911443538" target="_blank"><img src="zalo.png" alt="Nhắn Zalo" /></a>
+  </div>
+
+  <!-- Phần liên hệ -->
+  <div id="lienhe" class="container">
+    <h2>Nhà xe Huy Hoàn</h2>
+    <p>Địa chỉ: 321 Hoàng Văn Thụ, Châu Sơn, Phủ Lý, Hà Nam</p>
+    <p><a href="tel:0911443538"><img src="call.png" style="width: 40px;"> 0911.443.538 - 0942.888.870</a></p>
+    <p><a href="https://zalo.me/0911443538"><img src="zalo.png" style="width: 40px;"> Zalo: ThienLongVu</a></p>
+  </div>
+
+  <!-- Event snippet for Lượt xem trang conversion page -->
+  <script>
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17115385989/V23_CI-5r80aEIWhoOE_',
+      'value': 1.0,
+      'currency': 'VND'
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
       effect: "coverflow",
@@ -181,65 +259,10 @@ ol.custom-list {
       },
       loop: true,
     });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   </script>
-<div class="nut-lien-he">
-  <a href="tel:0911443538">
-    <img src="call.png" alt="Gọi" />
-  </a>
-  <a href="https://zalo.me/0911443538" target="_blank">
-    <img src="zalo.png" alt="Zalo" style="width: 50px; vertical-align: middle;"/>
-    
-  </a>
-</div>
-<p> Xe ghép, xe tiện chuyến Hà Nam <=> Hà Nội <=> Nội Bài
-Nhận bao xe - Ghép xe - Đón tận nhà - Trả tận nơi
-Nhận đón trả khách tất cả các bệnh viện trong nội thành Hà Nội
-Cam kết giá rẻ nhất - Gọi ngay là có xe <br/> </p>
-<p>
-Bạn đang có nhu cầu di chuyển về Thành phố Phủ Lý  Hà Nam mà đang 
-phân vân chưa biết lựa chọn loại hình dịch vụ phương tiện nào để di 
-chuyển. Xe khách giá rẻ nhưng di chuyển lâu mất nhiều thời gian, xe limosine chất 
-lượng dịch vụ tốt nhưng không đón trả tận nơi, di chuyển bằng taxi thì chi phí cao. Nắm bắt được nhu cầu di 
-chuyển của khách hàng chúng tôi cho ra mắt dịch vụ xe ghép. xe tiện chuyến Phủ Lý Hà Nam - Hà Nội - Nội Bài với giá cả hợp
- lý thuận tiện cho mọi khách hàng có nhu cầu di chuyển </p> 
- <img src="./xe2.png" style="width: 100%; height= :autofill"/>
- <center> <b> Hà Nam <==> Hà Nội <==> Nội Bài </b> </center> 
-<ol class="custom-list">
-  <li>1 Ghế Hà Nội - Phủ Lý 200.000đ </li>
-  <li>2 Ghế Hà Nội - Phủ Lý 300.000đ</li>
-  <li>1 Ghế Nội Bài - Phủ Lý 350.000đ</li>
-  <li>Bao xe 4 Chỗ Phủ Lý - Hà Nội 500.000đ </li>
-  <li>Bao xe 7 Chỗ Phủ Lý - Hà Nội 650.000đ </li>
- <li>Bao xe 4 Chỗ Phủ Lý - Nội Bài 700.000đ </li>
-<li>Bao xe 7 Chỗ Phủ Lý - Nội Bài 850.000đ </li> 
-<i>Bảng giá trên được áp dụng cho các huyện Kim Bảng và Duy Tiên còn Lý Nhân , Bình Lục, Thanh Liêm Những khu vực xa hơn tùy địa điểm có thể sẽ phát sinh thêm 50.000đ cho mỗi biểu giá trên</i>
-<p>
-  Phương châm của chúng tôi là chất lượng phục vụ được đặt lên hàng đầu, nên các bạn hoàn toàn yên tâm và thoải mái khi đi cùng.
-  Chúng tôi cam kết không thu thêm bất kỳ khoản phí nào khác như phí đường cao tốc, phí chờ đợi...
-
-</p>
-
-</ol>
-<img src="./guido.png" style="width: 100%; height= :autofill"/>
-<b>Dịch vụ gửi đồ trong ngày </b><br/>
-<p>Bạn có nhu cầu chuyển đồ trong ngày cho người thân từ Hà Nội về Hà Nam hãy nhắn tin cho chúng tôi, chúng tôi cam kết vận chuyển an toàn nhanh chóng 
-và đảm bảo quý khách sẽ hài lòng với giá cả hợp lý chỉ từ 100.000đ - 150.000đ tùy vào độ cồng kềnh của món đồ bạn chuyển về.</p>
-<script>
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-</script>
-<!-- Khu vực liên hệ -->
-<div id="lienhe">
-  <h2>Nhà xe Huy Hoàn <br/>
-    Số 321 Hoàng Văn Thụ - Châu Sơn - Phủ Lý - Hà Nam
-
-  </h2>
-  <p>Gọi: 0911.443.538 - 0942.888.870</p>
-  <p><a href="https://zalo.me/0911443538" target="_blank">
-    <img src="zalo.png" alt="Zalo" style="width: 50px; vertical-align: middle;">
-  </a>
-     <b>ThienLongVu</b></p></p>
-</div>
 </body>
 </html>
