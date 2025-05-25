@@ -84,9 +84,56 @@ ol.custom-list {
   p::first-letter {
     text-transform: uppercase; /* Viết hoa chữ cái đầu tiên */
   }
+    /* Thanh tiện ích */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: white;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 18px;
+  }
+
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+
+  .navbar .icon {
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  /* Dành cho toàn trang để tránh bị che bởi thanh nav */
+  body {
+    padding-top: 60px;
+  }
+
+  /* Phần liên hệ mẫu */
+  #lienhe {
+    margin-top: 500px;
+    padding: 40px;
+    background-color: #f2f2f2;
+  }
   </style>
 </head>
 <body>
+  <div class="navbar">
+  <a href="#" onclick="scrollToTop()">
+    🏠 Trang đầu
+  </a>
+  <a href="#lienhe">Liên hệ</a>
+</div>
   <center> NHÀ XE HUY HOÀN 
      
     </b>
@@ -174,6 +221,19 @@ chuyển của khách hàng chúng tôi cho ra mắt dịch vụ xe ghép. xe ti
 <b>Dịch vụ gửi đồ trong ngày </b><br/>
 Bạn có nhu cầu chuyển đồ trong ngày cho người thân từ Hà Nội về Hà Nam hãy nhắn tin cho chúng tôi, chúng tôi cam kết vận chuyển an toàn nhanh chóng 
 và đảm bảo quý khách sẽ hài lòng với giá cả hợp lý chỉ từ 100.000đ - 150.000đ tùy vào độ cồng kềnh của món đồ bạn chuyển về.
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+<!-- Khu vực liên hệ -->
+<div id="lienhe">
+  <h2>Nhà xe Huy Hoàn <br/>
+    Số 321 Hoàng Văn Thụ - Châu Sơn - Phủ Lý - Hà Nam
 
+  </h2>
+  <p>Gọi: 0911.443.538 - 0942.888.870</p>
+  <p>Zalo: 0911443538</p>
+</div>
 </body>
 </html>
