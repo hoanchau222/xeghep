@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nha Xe Huy Hoan</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .swiper {
+      width: 100%;
+      height: auto;
+      max-width: 800px;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    .swiper-slide {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .nut-lien-he {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  z-index: 999;
+}
+
+.nut-lien-he a {
+  display: block;
+  margin: 10px 0;
+}
+
+.nut-lien-he img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #000;
+  transition: transform 0.2s;
+}
+
+.nut-lien-he img:hover {
+  transform: scale(1.1);
+}
+ol.custom-list {
+    list-style-type: none; /* Ẩn số thứ tự mặc định */
+    padding-left: 0; /* Xóa khoảng cách bên trái */
+  }
+
+  ol.custom-list li {
+    position: relative; /* Thiết lập vị trí tương đối cho phần tử li */
+    padding-left: 1.5em; /* Thêm khoảng cách bên trái để chứa dấu chấm */
+  }
+
+  ol.custom-list li::before {
+    content: '•'; /* Dấu chấm đen */
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    left: 0; /* Căn trái */
+    top: 0; /* Căn trên */
+    font-size: 1.2em; /* Kích thước dấu chấm */
+    color: black; /* Màu sắc dấu chấm */
+  }
+  p {
+    text-transform: lowercase; /* Chuyển toàn bộ văn bản thành chữ thường */
+    text-indent: 2em; /* Thụt đầu dòng 2 ký tự */
+  }
+
+  p::first-letter {
+    text-transform: uppercase; /* Viết hoa chữ cái đầu tiên */
+  }
+  </style>
+</head>
+<body>
+  <center> NHÀ XE HUY HOÀN 
+     
+    </b>
+    <br/>
+    Chuyên phục vụ xe ghép - xe tiện chuyến - xe taxi giá rẻ <br/> 0911.443.538 - 0942.888.870
+ </center>
+
+  <h2 style="text-align: center;">Slideshow hiệu ứng 3D Coverflow</h2>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="sunurbancity.jpg" alt="Ảnh 1"></div>
+      <div class="swiper-slide"><img src="xe1.png" alt="Ảnh 2"></div>
+      <div class="swiper-slide"><img src="xe2.png" alt="Ảnh 3"></div>
+      <div class="swiper-slide"><img src="xe3.png" alt="Ảnh 3"></div>
+      <div class="swiper-slide"><img src="xe4.png" alt="Ảnh 3"></div>
+      <div class="swiper-slide"><img src="xe5.png" alt="Ảnh 3"></div>
+      <div class="swiper-slide"><img src="xe7.png" alt="Ảnh 3"></div>
+      <div class="swiper-slide"><img src="xe8.png" alt="Ảnh 3"></div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Khởi tạo hiệu ứng Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+    });
+  </script>
+<div class="nut-lien-he">
+  <a href="tel:0911443538">
+    <img src="call.png" alt="Gọi" />
+  </a>
+  <a href="https://zalo.me/0911443538" target="_blank">
+    <img src="zalo.png" alt="Zalo" />
+  </a>
+</div>
+<p> Xe ghép, xe tiện chuyến Hà Nam <=> Hà Nội <=> Nội Bài
+Nhận bao xe - Ghép xe - Đón tận nhà - Trả tận nơi
+Nhận đón trả khách tất cả các bệnh viện trong nội thành Hà Nội
+Cam kết giá rẻ nhất - Gọi ngay là có xe <br/> </p>
+<p>
+Bạn đang có nhu cầu di chuyển về Thành phố Phủ Lý  Hà Nam mà đang 
+phân vân chưa biết lựa chọn loại hình dịch vụ phương tiện nào để di 
+chuyển. Xe khách giá rẻ nhưng di chuyển lâu mất nhiều thời gian, xe limosine chất 
+lượng dịch vụ tốt nhưng không đón trả tận nơi, di chuyển bằng taxi thì chi phí cao. Nắm bắt được nhu cầu di 
+chuyển của khách hàng chúng tôi cho ra mắt dịch vụ xe ghép. xe tiện chuyến Phủ Lý Hà Nam Hà Nội Nội Bài với giá cả hợp
+ lý thuận tiện cho mọi khách hàng có nhu cầu di chuyển </p> 
+ <img src="./xe2.png" style="width: 100%; height= :autofill"/>
+ <center> <b> Hà Nam <==> Hà Nội <==> Nội Bài </b> </center> 
+<ol class="custom-list">
+  <li>1 Ghế Hà Nội - Phủ Lý 200.000đ </li>
+  <li>2 Ghế Hà Nội - Phủ Lý 300.000đ</li>
+  <li>1 Ghế Nội Bài - Phủ Lý 350.000đ</li>
+  <li>Bao xe 4 Chỗ Phủ Lý - Hà Nội 500.000đ </li>
+  <li>Bao xe 7 Chỗ Phủ Lý - Hà Nội 650.000đ </li>
+ <li>Bao xe 4 Chỗ Phủ Lý - Nội Bài 700.000đ </li>
+<li>Bao xe 7 Chỗ Phủ Lý - Nội Bài 850.000đ </li> 
+<i>Bảng giá trên được áp dụng cho các huyện Kim Bảng và Duy Tiên còn Lý Nhân , Bình Lục, Thanh Liêm Những khu vực xa hơn tùy địa điểm có thể sẽ phát sinh thêm 50.000đ cho mỗi biểu giá trên</i>
+<p>
+  Phương châm của chúng tôi là chất lượng phục vụ được đặt lên hàng đầu, nên các bạn hoàn toàn yên tâm và thoải mái khi đi cùng. Chúng tôi cam kết không thu thêm bất kỳ khoản phí nào khác như phí đường cao tốc...
+
+</p>
+
+</ol>
+<img src="./guido.png" style="width: 100%; height= :autofill"/>
+<b>Dịch vụ gửi đồ trong ngày </b><br/>
+Bạn có nhu cầu chuyển đồ trong ngày cho người thân từ Hà Nội về Hà Nam hãy nhắn tin cho chúng tôi, chúng tôi cam kết vận chuyển an toàn nhanh chóng 
+và đảm bảo quý khách sẽ hài lòng với giá cả hợp lý chỉ từ 100.000đ - 150.000đ tùy vào độ cồng kềnh của món đồ bạn chuyển về.
+
+</body>
+</html>
