@@ -2,19 +2,23 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Đặt xe thành công</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      padding: 100px;
+      padding: 80px 20px;
       background-color: #f8f9fa;
     }
     h1 {
       color: green;
+      font-size: 36px;
+      margin-bottom: 20px;
     }
     p {
-      font-size: 18px;
+      font-size: 20px;
+      margin-bottom: 30px;
     }
     a {
       display: inline-block;
@@ -22,14 +26,37 @@
       text-decoration: none;
       background-color: #28a745;
       color: white;
-      padding: 10px 20px;
+      padding: 14px 28px;
+      font-size: 18px;
       border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    a:hover {
+      background-color: #218838;
     }
   </style>
+
+  <!-- Global site tag (gtag.js) - Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17115385989"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17115385989');
+  </script>
 </head>
 <body>
   <h1>✅ Cảm ơn bạn đã đặt xe!</h1>
   <p>Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.</p>
   <a href="/">⬅️ Quay về trang chủ</a>
+
+  <!-- Event snippet for Lượt xem trang conversion page -->
+  <script>
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17115385989/V23_CI-5r80aEIWhoOE_',
+      'value': 1.0,
+      'currency': 'VND'
+    });
+  </script>
 </body>
 </html>
