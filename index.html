@@ -144,25 +144,24 @@
       font-weight: bold;
     }
   
-.animated-phone {
-  display: inline-block;
+.static-phone {
   font-size: 20px;
   color: #007BFF;
   font-weight: bold;
   text-decoration: none;
-  animation: pulse 1.5s infinite;
-  transition: transform 0.2s;
+  transition: color 0.2s;
 }
 
-.animated-phone:hover {
-  transform: scale(1.1);
+.static-phone:hover {
   color: #0056b3;
 }
 
-@keyframes pulse {
-  0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.05); opacity: 0.85; }
-  100% { transform: scale(1); opacity: 1; }
+.phone-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 </style>
@@ -177,10 +176,13 @@
   <div class="container">
     <h1>NHÀ XE HUY HOÀN</h1>
     <p class="center-text">Chuyên phục vụ xe ghép - xe tiện chuyến - taxi giá rẻ</p>
-    <p class="center-text">
-  <a class="animated-phone" href="tel:0911443538">📞 0911.443.538</a> &nbsp; | &nbsp;
-  <a class="animated-phone" href="tel:0942888870">📞 0942.888.870</a>
+    
+<p class="center-text phone-row">
+  <a class="static-phone" href="tel:0911443538">📞 0911.443.538</a>
+  <span style="margin: 0 10px;">|</span>
+  <a class="static-phone" href="tel:0942888870">📞 0942.888.870</a>
 </p>
+
 
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
